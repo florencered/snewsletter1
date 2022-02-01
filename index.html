@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsletter</title>
+	<meta charset="UTF-8"> <!--gives information about the website/blog-->
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML, CSS,landing,resolutions,template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script> 
+	<style type="text/css">
+		
+		.wrapper{ 
+			background-color: grey;
+			/*table layout is grey*/ 
+			width: 100%; /*would cover the whole span*/
+			table-layout: fixed; /*would always cover the while width despite low word length*/
+		} 
+		.table{ 
+			width:100%; /*cover 100% till 600px,more than that,adjust yourself*/
+			max-width: 600px; /*thats the size of most phones,so beyond that size we would see grey borders*/
+			background-color: white; /*colour of the email template is white*/ 
+			margin:0 auto; /*top and bottom no margin,left and right,arrange it yourselves acc.*/ 
+			border-spacing: 0px; /*no spacing around the border email template*/
+		} 
+		.bannerimage{
+			background-image: url(shopping1.jpg);
+			height: 600px;
+			max-width:600px;
+			border-spacing: 0px; 
+			background-repeat: no-repeat;
+			background-size: cover;
+			cursor: pointer;
+			text-align: center; 
+			text-decoration:none;
+			
+
+		} 
+		
+		.bannerheading{
+		
+		color: white; 
+		
+		} 
+	
+		.second-row{
+			text-align: center;
+			color: white;
+			font-size: 20px;
+		} 
+		.column-1{
+			width: 300px;
+			max-width:300px; 
+			padding-bottom: 40px;
+
+			
+		} 
+		.column-2{
+			width:300px;
+			max-width:300px; 
+			padding-bottom: 40px;
+
+			
+		} 
+		.two-columns{
+			text-align: center; 
+			font-size: 0; 
+			
+			padding-bottom: 40px; 
+			padding-left: 0px;
+			padding-right: 0px; 
+
+		} 
+		.column{
+			/*display: inline-block !important;*/
+			width: 100%; 
+			display: inline-block;
+			max-width: 300px; /*the table will be centerd*/ 
+			vertical-align: top; /*one over other all the time*/ 
+			text-align: center;/*the image will be centered*/ 
+			padding-bottom: 40px; /*below  each of the pictures*/
+			font-size: 18px;
+		}
+		.btn{
+			background-color:#000080 ; /*creates a background behind the text*/
+			color: white;
+			padding: 0.6rem 1.3rem; /*top and bottom,left and right*//*ideal size for creating a button*//*also,padding is the dist between the text and its bg colour borderrs*/
+			text-decoration: none; /*remove the underlines from the link/we get the plain text ,colour might change*/
+			border-radius:5%; /*bends the edges of the bg color aby a radius of 5px,50% represents a circle with a squiare box and oval with a rectangular box*/
+		}  
+		#btn1{
+			width: 30%; 
+			margin-left:12rem;
+		} 
+		@media (max-width: 600px){ 
+			#btn1{
+			width: 30%; 
+			margin-left:7rem;
+		} 
+
+		}
+		
+		
+		
+		
+		
+
+
+
+
+	</style>
+</head> 
+
+<body>
+	<div class='wrapper'>
+		<table class='table'>
+			<tr class='first-row'><!--first table row--> 
+				<td height="40"style="background-color: #000080;max-width:600px"></td> <!--height of the table data is 8px(inside the brackets we dint need to write px)-->
+				
+			</tr>
+			<tr>
+				<td height="50" style="background-color: white;text-align: center;font-size: 30px; padding: 10px;">G-NOOB APPAREL</td>
+			</tr>
+			<!--banner image-->
+			<tr>
+				<td class='bannerimage'>
+					<a href="#">
+						
+							<h1 class='bannerheading'>Get min.20% off on all apparels</h1> 
+							<p class='btn' id='btn1'>Shop now</p> 
+					</a>
+				</td>
+			<tr class='second-row'><!--first table row--> 
+				<td height="40"style="background-color: #000080">SHOP OUR LATEST DEALS</td> <!--height of the table data is 8px(inside the brackets we dint need to write px)-->
+			</tr> 
+			<!--two photo column-->
+			<tr> <!--another row--> 
+				<td> <!--data inside the row--> 
+					<table width="100%"> <!--a table inside the row to make 2 columns--> 
+						<tr> <!--the table has one row covering full screen--> 
+							<td class='two-columns'>
+								<table class='column'>
+									<tr>
+										<td>
+											<a href="#" ><img src="shopping2.jpg" class='column-1' ></a>	
+											<a href="#" class='btn'>SHOP INFORMALS</a> 
+										</td>
+									</tr>		 		
+								</table> 
+								<table class='column'>
+									<tr>
+										<td>
+											<a href="#" ><img src="shopping4.jpg" class='column-2' ></a>
+											<a href="#" class='btn'>SHOP FORMALS</a> 
+										</td>
+									</tr>		 		
+								</table> 
+
+							</td> <!--2 seperate tables for 2 photos-->	
+						</tr> 
+					</table>
+					
+				</td>		
+				
+			</tr>
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#000080; width:600px;font-size:22px;color:white;text-align:center; border-bottom:solid; border-color: white;padding: 15px; border-width:10px">NEW APPARELS</td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#000080; width:600px;height:15px;color:white;text-align:center;margin-bottom:2px;border-bottom:solid; border-color: white;padding: 15px; border-width:10px;font-size:22px;">SHOP WOMENS</td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#000080; width:600px;height:15px;color:white;text-align:center;margin-bottom:2px;border-bottom:solid; border-color: white;padding: 15px; border-width:10px;font-size:22px;">SHOP MENS</td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#000080; width:600px;height:15px;color:white;text-align:center;margin-bottom:2px;padding: 10px; border-width:10px;font-size:22px;">
+					<a href ="https://www.instagram.com"> 
+						<i class="fab fa-instagram fa-x"style="color:white;padding-right:5px" ></i>
+					</a>
+					<a href="https://www.discord.com">
+						<i class="fab fa-discord fa-x" style="color:white;padding-right:5px"></i>
+					</a>
+					<a href="https://www.twitter.com">
+						<i class="fab fa-twitter fa-x" style="color:white;padding-right:5px"></i>
+					</a> 
+					<div id='copyright' style="font-size: 15px;text-align:left;padding-right:5px">&copy; 2021geekynoobspvt.ltd</div>
+				</td>
+				
+			</tr>
+
+
+
+
+		</table> <!--html emails are made using tables,everything is inside single table-->
+	</div>
+
+</body>
+</html>
